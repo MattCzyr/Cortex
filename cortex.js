@@ -28,7 +28,6 @@ Cleverbot.prepare(function() {
 
 function getNickname(guild) {
     if (guild.available) {
-        console.log(guild.members);
         var member = guild.members.get(client.user.id);
         if (member != null && member.nickname != null) {
             return member.nickname;
